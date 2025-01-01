@@ -1,0 +1,22 @@
+%btn{
+    padding: 0.5rem 0.7rem;
+    outline: transparent;
+    margin: 5px;
+    background-color: $primary-color;
+    color: $text-primary-color;
+    border: none;
+    border-radius: $border-radius;
+    &:hover{
+        background-color: $primary-color;
+        transform: skew(10deg);
+        transition: $transition;
+    }
+}
+.btn-primary{
+    @extend %btn;
+    background: set-color-brightness($primary-color);
+    }
+    .btn-secondary{
+        @extend %btn;
+        background: lighten($secondary-color, 10%);
+    }
